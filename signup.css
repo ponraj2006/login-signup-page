@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+   
+}
+.signup_h1{
+    margin: 3%;
+    text-align: center;
+    font-family:'Lobster', 'Lobster', cursive;
+    text-transform: uppercase;
+}
+.container{
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  
+}
+.container input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+.container button{
+    padding: 10px;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container button:hover{
+   background-color: darkgreen;
+}
+
+.container p{
+    margin: 5px;
+}
+.container p a{
+    text-decoration: none;
+    margin: 5px;
+    font-weight: 400;
+    font-style: bold;
+}
