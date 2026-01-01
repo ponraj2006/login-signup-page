@@ -2,13 +2,16 @@
 let submitBtn = document.getElementById("submit-btn")
 let myForm = document.getElementById("myForm")
 
+submitBtn.style.cursor = "not-allowed"
+submitBtn.style.backgroundColor = "gray"
+
 // Main function
 let checkForm = () => {
   let username = document.getElementById("username").value.trim()
   let mobile = document.getElementById("mobile").value.trim()
   let email = document.getElementById("email").value.trim()
   let password = document.getElementById("password").value.trim()
- let confirmPassword = document.getElementById("confirm_password").value.trim()
+  let confirmPassword = document.getElementById("confirm_password").value.trim()
 
   console.log(username, mobile, email, password, confirmPassword)
    
@@ -18,6 +21,21 @@ let checkForm = () => {
  else {
     alert("Enter Valid Data")
   }
+}
+
+let validPass =()=>{
+  let password = document.getElementById("password").value.trim()
+  let confirmPassword = document.getElementById("confirm_password").value.trim()
+
+  if(password === confirmPassword){
+   submitBtn.style.cursor = "pointer"
+submitBtn.style.backgroundColor = "green"
+  }
+  else{
+    submitBtn.style.cursor = "not-allowed"
+    submitBtn.style.backgroundColor = "gray"
+  }
+   
 }
 
 

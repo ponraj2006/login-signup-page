@@ -18,18 +18,19 @@
 
   <input type="num" id="mobile" placeholder="Mobile Number"  /><br />
 
-  <input type="email" id="email" placeholder="Email"  /><br />
+  <input  type="email" id="email" placeholder="Email" /><br />
 
   <input
     type="password"
     id="password"
     placeholder="Password"
-    
+    onkeyup="validPass()"
   /><br />
 
   <input
     type="password"
     id="confirm_password"
+    onkeyup="validPass()"
     placeholder="Confirm password"
     
   /><br />
